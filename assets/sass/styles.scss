@@ -1,0 +1,48 @@
+@import 'reset';
+
+$cor-fundo: #eee;
+$cor-fonte: #555;
+$borda-padrao: 6px;
+$padding-padrao: 10px;
+
+
+nav{
+  background-color: $cor-fundo;
+  ul{
+    list-style: none;
+    display: flex;    
+    li{
+      padding: $padding-padrao;
+      margin: 0 $padding-padrao;
+      a{
+        text-decoration: none;
+        color: $cor-fonte;
+        display: block;
+        background-color: $cor-fundo;
+      }
+    }
+  }
+}
+
+h1{
+  font-size: 30px; 
+  color: $cor-fonte
+}
+
+.quadrado{
+  width: 200px;
+  height: 200px;
+  // display: inline-block;
+  border: $borda-padrao solid $cor-fonte;
+  padding: $padding-padrao;
+  background-color: $cor-fundo;
+}
+
+.retangulo{
+  width: 400px;
+  height: 200px;
+  display: inline-block;
+  border: $borda-padrao solid $cor-fonte;
+  padding: $padding-padrao;
+  background-color: $cor-fundo;
+}
