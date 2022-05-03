@@ -13,6 +13,9 @@ body {
 nav {
   background-color: #eee;
 }
+nav:hover a {
+  background-color: red;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -32,6 +35,9 @@ nav ul li a {
   background-color: #ddd;
   padding: 10px;
   border: 3px solid #555;
+}
+nav ul li a:hover {
+  background-color: #eee;
 }
 
 h1 {
@@ -101,4 +107,20 @@ h1 {
 
 .item-triplo {
   width: 750px;
+}
+
+.item-10, .item-9, .item-8, .item-7, .item-6, .item-5, .item-4, .item-3, .item-2, .item-1 {
+  font-size: 14px;
+  border: 3px solid #555;
+  padding: 5px;
+  background-color: #000;
+  color: #555;
+}
+
+.item-3, .item-2, .item-1 {
+  font-weight: bold;
+}
+
+.item-10, .item-9, .item-8, .item-7, .item-6, .item-5, .item-4 {
+  font-weight: normal;
 }

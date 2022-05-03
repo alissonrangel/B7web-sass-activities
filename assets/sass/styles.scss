@@ -15,6 +15,10 @@ $padding-padrao: 10px;
 
 nav{
   background-color: $cor-fundo;
+
+  &:hover a{
+    background-color: red;
+  }
   ul{
     list-style: none;
     display: flex;    
@@ -29,6 +33,10 @@ nav{
         background-color: #ddd;
         padding: $padding-padrao;
         border: 3px solid $cor-fonte;
+        
+        &:hover{
+          background-color: #eee;
+        }
       }
     }
   }
@@ -113,3 +121,34 @@ $item-width: 250px;
   width: $item-width * 3;
 }
 
+// 11 - for if
+%item-padrao{
+  font-size: 14px;
+  border: 3px solid #555;
+  padding: 5px;
+  background-color: #000;
+  color: $cor-fonte;
+}
+
+%item-negrito{
+  font-weight: bold;
+}
+
+%item-semi-negrito{
+  font-weight: normal;
+}
+
+@for $i from 1 through 10 {
+  .item-#{$i}{
+    @extend %item-padrao;
+
+    @if $i <= 3 {
+      @extend %item-negrito;
+    }
+    @else {
+      @extend %item-semi-negrito;
+    }
+  }
+}
+
+//12 - hover
